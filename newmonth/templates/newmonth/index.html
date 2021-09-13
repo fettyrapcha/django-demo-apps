@@ -1,0 +1,16 @@
+{%  load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>New</title>
+        <link href="{% static 'newmonth/style.css' %}" rel="stylesheet" >
+    </head>
+    <body>
+        {% if newmonth %}
+            <h1>Yes, today is a new month</h1>
+        {% else %}
+            <h1>No, today is not a new month</h1>
+        {% endif %}
+    </body>
+</html>
